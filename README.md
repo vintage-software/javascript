@@ -776,22 +776,22 @@ A big thanks to the following projects:
   - [12.1](#12.1) <a name='12.1'></a> Use dot notation when accessing properties.
 
     ```javascript
-    const luke = {
+    let luke = {
       jedi: true,
       age: 28,
     };
 
     // bad
-    const isJedi = luke['jedi'];
+    let isJedi = luke['jedi'];
 
     // good
-    const isJedi = luke.jedi;
+    let isJedi = luke.jedi;
     ```
 
   - [12.2](#12.2) <a name='12.2'></a> Use subscript notation `[]` when accessing properties with a variable.
 
     ```javascript
-    const luke = {
+    let luke = {
       jedi: true,
       age: 28,
     };
@@ -800,7 +800,7 @@ A big thanks to the following projects:
       return luke[prop];
     }
 
-    const isJedi = getProp('jedi');
+    let isJedi = getProp('jedi');
     ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -808,36 +808,36 @@ A big thanks to the following projects:
 
 ## Variables
 
-  - [13.1](#13.1) <a name='13.1'></a> Always use `const` to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that.
+  - [13.1](#13.1) <a name='13.1'></a> Always use `let` to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that.
 
     ```javascript
     // bad
     superPower = new SuperPower();
 
     // good
-    const superPower = new SuperPower();
+    let superPower = new SuperPower();
     ```
 
-  - [13.2](#13.2) <a name='13.2'></a> Use one `const` declaration per variable.
+  - [13.2](#13.2) <a name='13.2'></a> Use one `let` declaration per variable.
 
     > Why? It's easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs.
 
     ```javascript
     // bad
-    const items = getItems(),
+    let items = getItems(),
         goSportsTeam = true,
         dragonball = 'z';
 
     // bad
     // (compare to above, and try to spot the mistake)
-    const items = getItems(),
+    let items = getItems(),
         goSportsTeam = true;
         dragonball = 'z';
 
     // good
-    const items = getItems();
-    const goSportsTeam = true;
-    const dragonball = 'z';
+    let items = getItems();
+    let goSportsTeam = true;
+    let dragonball = 'z';
     ```
 
   - [13.3](#13.3) <a name='13.3'></a> Group all your `const`s and then group all your `let`s.
