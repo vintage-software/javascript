@@ -1778,11 +1778,16 @@ A big thanks to the following projects:
   **[⬆ back to top](#table-of-contents)**
   
 
-## ECMAScript 5 Compatibility
+## ECMAScript Compatibility
+Default we support ES5 browsers. We encourage projects to start addopting ES6 and ES7 to allow
+projects to become future friendly. To start using these features use atranspiler such as [TypeScript](http://www.typescriptlang.org/) (Preferred) or [BabelJS](https://babeljs.io/).
 
-  - [26.1](#26.1) <a name='26.1'></a> Refer to [Kangax](https://twitter.com/kangax/)'s ES5 [compatibility table](http://kangax.github.com/es5-compat-table/).
-
+  - [26.1](#26.1) <a name='26.1'></a> Refer to the ES5 [compatibility table](http://kangax.github.com/es5-compat-table/).
+  - [26.1](#26.1) <a name='26.1'></a> Refer to the ES6 [compatibility table](http://kangax.github.com/es6-compat-table/).
+  - [26.1](#26.1) <a name='26.1'></a> Refer to the ES7 [compatibility table](http://kangax.github.com/es7-compat-table/).
+  
 **[⬆ back to top](#table-of-contents)**
+
 
 ## ECMAScript 6 Styles
 
