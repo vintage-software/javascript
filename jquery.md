@@ -1,6 +1,6 @@
 # jQuery Style Guide
 
-  - [25.1](#25.1) <a name='25.1'></a> Prefix jQuery object variables with a `$`.
+  - [1.1](#1.1) <a name='1.1'></a> Prefix jQuery object variables with a `$`.
 
     ```javascript
     // bad
@@ -10,7 +10,7 @@
     const $sidebar = $('.sidebar');
     ```
 
-  - [25.2](#25.2) <a name='25.2'></a> Cache jQuery lookups.
+  - [1.2](#1.2) <a name='1.2'></a> Cache jQuery lookups.
 
     ```javascript
     // bad
@@ -37,8 +37,8 @@
     }
     ```
 
-  - [25.3](#25.3) <a name='25.3'></a> For DOM queries use Cascading `$('.sidebar ul')` or parent > child `$('.sidebar > ul')`. [jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
-  - [25.4](#25.4) <a name='25.4'></a> Use `find` with scoped jQuery object queries.
+  - [1.3](#1.3) <a name='1.3'></a> For DOM queries use Cascading `$('.sidebar ul')` or parent > child `$('.sidebar > ul')`. [jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
+  - [1.4](#1.4) <a name='1.4'></a> Use `find` with scoped jQuery object queries.
 
     ```javascript
     // bad
