@@ -3,7 +3,8 @@
 A big thanks to the following projects:
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - [Github Style Guide](https://github.com/styleguide/javascript)
-- [idiomatic.js] (https://github.com/rwaldron/idiomatic.js/)
+- [idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
+
 ### All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
 ## Table of Contents
