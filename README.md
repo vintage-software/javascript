@@ -1204,22 +1204,17 @@ A big thanks to the following projects:
 
 ## Whitespace
 
-  - [18.1](#18.1) <a name='18.1'></a> Use soft tabs set to 2 spaces.
+  - [18.1](#18.1) <a name='18.1'></a> Use hard tabs set to 4 spaces.
 
     ```javascript
     // bad
     function() {
-    ∙∙∙∙const name;
-    }
-
-    // bad
-    function() {
-    ∙const name;
+    ∙∙const name;
     }
 
     // good
     function() {
-    ∙∙const name;
+    ∙∙∙∙const name;
     }
     ```
 
@@ -1425,7 +1420,7 @@ A big thanks to the following projects:
 
   - [19.2](#19.2) <a name='19.2'></a> Additional trailing comma: **Yup.**
 
-  > Why? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don't have to worry about the [trailing comma problem](es5/README.md#commas) in legacy browsers.
+  > Why? This leads to cleaner git/mercurial diffs. Also, transpilers like Babel/TypeScript will remove the additional trailing comma in the transpiled code which means you don't have to worry about the [trailing comma problem](es5/README.md#commas) in legacy browsers.
 
     ```javascript
     // bad - git diff without trailing comma
@@ -1486,15 +1481,6 @@ A big thanks to the following projects:
       return name;
     })();
 
-    // good (guards against the function becoming an argument when two files with IIFEs are concatenated)
-    ;(() => {
-      const name = 'Skywalker';
-      return name;
-    })();
-    ```
-
-    [Read more](http://stackoverflow.com/a/7365214/1712802).
-
 **[⬆ back to top](#table-of-contents)**
 
 
@@ -1507,34 +1493,34 @@ A big thanks to the following projects:
     //  => this.reviewScore = 9;
 
     // bad
-    const totalScore = this.reviewScore + '';
+    let totalScore = this.reviewScore + '';
 
     // good
-    const totalScore = String(this.reviewScore);
+    let totalScore = String(this.reviewScore);
     ```
 
   - [21.3](#21.3) <a name='21.3'></a> Use `parseInt` for Numbers and always with a radix for type casting.
 
     ```javascript
-    const inputValue = '4';
+    let inputValue = '4';
 
     // bad
-    const val = new Number(inputValue);
+    let val = new Number(inputValue);
 
     // bad
-    const val = +inputValue;
+    let val = +inputValue;
 
     // bad
-    const val = inputValue >> 0;
+    let val = inputValue >> 0;
 
     // bad
     const val = parseInt(inputValue);
 
     // good
-    const val = Number(inputValue);
+    let val = Number(inputValue);
 
     // good
-    const val = parseInt(inputValue, 10);
+    let val = parseInt(inputValue, 10);
     ```
 
   - [21.4](#21.4) <a name='21.4'></a> If for whatever reason you are doing something wild and `parseInt` is your bottleneck and need to use Bitshift for [performance reasons](http://jsperf.com/coercion-vs-casting/3), leave a comment explaining why and what you're doing.
@@ -1560,16 +1546,16 @@ A big thanks to the following projects:
   - [21.6](#21.6) <a name='21.6'></a> Booleans:
 
     ```javascript
-    const age = 0;
+    let age = 0;
 
     // bad
-    const hasAge = new Boolean(age);
+    let hasAge = new Boolean(age);
 
     // good
-    const hasAge = Boolean(age);
+    let hasAge = Boolean(age);
 
     // good
-    const hasAge = !!age;
+    let hasAge = !!age;
     ```
 
 **[⬆ back to top](#table-of-contents)**
