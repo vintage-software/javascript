@@ -4,6 +4,8 @@ A big thanks to the following projects:
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - [Github Style Guide](https://github.com/styleguide/javascript)
 
+### All code in any code-base should look like a single person typed it, no matter how many people contributed.
+
 ## Table of Contents
 
   1. [Types](#types)
