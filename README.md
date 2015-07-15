@@ -33,7 +33,7 @@ A big thanks to the following projects:
   1. [Naming Conventions](#naming-conventions)
   1. [Accessors](#accessors)
   1. [Events](#events)
-  1. [ECMAScript 5 Compatibility](#ecmascript-5-compatibility)
+  1. [ECMAScript Compatibility](#ecmascript-compatibility)
   1. [ECMAScript 6 Styles](#ecmascript-6-styles)
   1. [Testing](#testing)
   1. [Performance](#performance)
