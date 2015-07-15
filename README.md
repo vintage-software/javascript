@@ -39,9 +39,6 @@ A big thanks to the following projects:
   1. [Testing](#testing)
   1. [Performance](#performance)
   1. [Resources](#resources)
-  1. [The JavaScript Style Guide Guide](#the-javascript-style-guide-guide)
-  1. [Chat With Us About Javascript](#chat-with-us-about-javascript)
-  1. [Contributors](#contributors)
   1. [License](#license)
 
 ## Types
@@ -1976,19 +1973,6 @@ A big thanks to the following projects:
 
 
 **[⬆ back to top](#table-of-contents)**
-
-## The JavaScript Style Guide Guide
-
-  - [Reference](https://github.com/airbnb/javascript/wiki/The-JavaScript-Style-Guide-Guide)
-
-## Chat With Us About JavaScript
-
-  - Find us on [gitter](https://gitter.im/airbnb/javascript).
-
-## Contributors
-
-  - [View Contributors](https://github.com/airbnb/javascript/graphs/contributors)
-
 
 ## License
 
