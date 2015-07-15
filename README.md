@@ -118,27 +118,27 @@ A big thanks to the following projects:
 
     ```javascript
     // bad
-    const item = new Object();
+    let item = new Object();
 
     // good
-    const item = {};
+    let item = {};
     ```
 
   - [3.2](#3.2) <a name='3.2'></a> Use readable synonyms in place of reserved words.
 
     ```javascript
     // bad
-    const superman = {
+    let superman = {
       class: 'alien',
     };
 
     // bad
-    const superman = {
+    let superman = {
       klass: 'alien',
     };
 
     // good
-    const superman = {
+    let superman = {
       type: 'alien',
     };
     ```
@@ -155,14 +155,14 @@ A big thanks to the following projects:
     }
 
     // bad
-    const obj = {
+    let obj = {
       id: 5,
       name: 'San Francisco',
     };
     obj[getKey('enabled')] = true;
 
     // good
-    const obj = {
+    let obj = {
       id: 5,
       name: 'San Francisco',
       [getKey('enabled')]: true,
@@ -174,7 +174,7 @@ A big thanks to the following projects:
 
     ```javascript
     // bad
-    const atom = {
+    let atom = {
       value: 1,
 
       addValue: function (value) {
@@ -183,7 +183,7 @@ A big thanks to the following projects:
     };
 
     // good
-    const atom = {
+    let atom = {
       value: 1,
 
       addValue(value) {
@@ -248,16 +248,16 @@ A big thanks to the following projects:
 
     ```javascript
     // bad
-    const items = new Array();
+    let items = new Array();
 
     // good
-    const items = [];
+    let items = [];
     ```
 
   - [4.2](#4.2) <a name='4.2'></a> Use Array#push instead of direct assignment to add items to an array.
 
     ```javascript
-    const someStack = [];
+    let someStack = [];
 
 
     // bad
@@ -272,8 +272,8 @@ A big thanks to the following projects:
 
     ```javascript
     // bad
-    const len = items.length;
-    const itemsCopy = [];
+    let len = items.length;
+    let itemsCopy = [];
     let i;
 
     for (i = 0; i < len; i++) {
@@ -281,13 +281,13 @@ A big thanks to the following projects:
     }
 
     // good
-    const itemsCopy = [...items];
+    let itemsCopy = [...items];
     ```
   - [4.4](#4.4) <a name='4.4'></a> To convert an array-like object to an array, use Array#from.
 
     ```javascript
-    const foo = document.querySelectorAll('.foo');
-    const nodes = Array.from(foo);
+    let foo = document.querySelectorAll('.foo');
+    let nodes = Array.from(foo);
     ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -301,15 +301,15 @@ A big thanks to the following projects:
     ```javascript
     // bad
     function getFullName(user) {
-      const firstName = user.firstName;
-      const lastName = user.lastName;
+      let firstName = user.firstName;
+      let lastName = user.lastName;
 
       return `${firstName} ${lastName}`;
     }
 
     // good
     function getFullName(obj) {
-      const { firstName, lastName } = obj;
+      let { firstName, lastName } = obj;
       return `${firstName} ${lastName}`;
     }
 
@@ -322,14 +322,14 @@ A big thanks to the following projects:
   - [5.2](#5.2) <a name='5.2'></a> Use array destructuring.
 
     ```javascript
-    const arr = [1, 2, 3, 4];
+    let arr = [1, 2, 3, 4];
 
     // bad
-    const first = arr[0];
-    const second = arr[1];
+    let first = arr[0];
+    let second = arr[1];
 
     // good
-    const [first, second] = arr;
+    let [first, second] = arr;
     ```
 
   - [5.3](#5.3) <a name='5.3'></a> Use object destructuring for multiple return values, not array destructuring.
@@ -365,29 +365,28 @@ A big thanks to the following projects:
 
     ```javascript
     // bad
-    const name = "Capt. Janeway";
+    let name = "Capt. Janeway";
 
     // good
-    const name = 'Capt. Janeway';
+    let name = 'Capt. Janeway';
     ```
 
-  - [6.2](#6.2) <a name='6.2'></a> Strings longer than 80 characters should be written across multiple lines using string concatenation.
-  - [6.3](#6.3) <a name='6.3'></a> Note: If overused, long strings with concatenation could impact performance. [jsPerf](http://jsperf.com/ya-string-concat) & [Discussion](https://github.com/airbnb/javascript/issues/40).
+  - [6.2](#6.2) <a name='6.2'></a> Strings longer than 80 characters should be written across multiple lines using template literal strings (backtick `) that allow multi-line strings.
 
     ```javascript
     // bad
-    const errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.';
+    let errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.';
 
     // bad
-    const errorMessage = 'This is a super long error that was thrown because \
+    let errorMessage = 'This is a super long error that was thrown because \
     of Batman. When you stop to think about how Batman had anything to do \
     with this, you would get nowhere \
     fast.';
 
     // good
-    const errorMessage = 'This is a super long error that was thrown because ' +
-      'of Batman. When you stop to think about how Batman had anything to do ' +
-      'with this, you would get nowhere fast.';
+    let errorMessage = `This is a super long error that was thrown because
+      of Batman. When you stop to think about how Batman had anything to do
+      with this, you would get nowhere fast.`;
     ```
 
   <a name="es6-template-literals"></a>
@@ -423,7 +422,7 @@ A big thanks to the following projects:
 
     ```javascript
     // bad
-    const foo = function () {
+    let foo = function () {
     };
 
     // good
@@ -437,7 +436,7 @@ A big thanks to the following projects:
     // immediately-invoked function expression (IIFE)
     (() => {
       console.log('Welcome to the Internet. Please follow me.');
-    })();
+    }());
     ```
 
   - [7.3](#7.3) <a name='7.3'></a> Never declare a function in a non-function block (if, while, etc). Assign the function to a variable instead. Browsers will allow you to do it, but they all interpret it differently, which is bad news bears.
