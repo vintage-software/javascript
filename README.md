@@ -1,6 +1,6 @@
 # Vintage Software JavaScript Style Guide
 
-A big thanks to the following projects to get ideas for this styleguide!
+A big thanks to the following projects:
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - [Github Style Guide](https://github.com/styleguide/javascript)
 
@@ -80,21 +80,7 @@ A big thanks to the following projects to get ideas for this styleguide!
 
 ## References
 
-  - [2.1](#2.1) <a name='2.1'></a> Use `const` for all of your references; avoid using `var`.
-
-  > Why? This ensures that you can't reassign your references (mutation), which can lead to bugs and difficult to comprehend code.
-
-    ```javascript
-    // bad
-    var a = 1;
-    var b = 2;
-
-    // good
-    const a = 1;
-    const b = 2;
-    ```
-
-  - [2.2](#2.2) <a name='2.2'></a> If you must mutate references, use `let` instead of `var`.
+  - [2.1](#2.1) <a name='2.1'></a> Use `let` for all of your references; avoid using `var`.
 
   > Why? `let` is block-scoped rather than function-scoped like `var`.
 
@@ -112,7 +98,7 @@ A big thanks to the following projects to get ideas for this styleguide!
     }
     ```
 
-  - [2.3](#2.3) <a name='2.3'></a> Note that both `let` and `const` are block-scoped.
+  - [2.3](#2.2) <a name='2.2'></a> Note that both `let` and `const` are block-scoped.
 
     ```javascript
     // const and let only exist in the blocks they are defined in.
@@ -138,23 +124,7 @@ A big thanks to the following projects to get ideas for this styleguide!
     const item = {};
     ```
 
-  - [3.2](#3.2) <a name='3.2'></a> If your code will be executed in browsers in script context, don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61). It’s OK to use them in ES6 modules and server-side code.
-
-    ```javascript
-    // bad
-    const superman = {
-      default: { clark: 'kent' },
-      private: true,
-    };
-
-    // good
-    const superman = {
-      defaults: { clark: 'kent' },
-      hidden: true,
-    };
-    ```
-
-  - [3.3](#3.3) <a name='3.3'></a> Use readable synonyms in place of reserved words.
+  - [3.2](#3.2) <a name='3.2'></a> Use readable synonyms in place of reserved words.
 
     ```javascript
     // bad
@@ -174,7 +144,7 @@ A big thanks to the following projects to get ideas for this styleguide!
     ```
 
   <a name="es6-computed-properties"></a>
-  - [3.4](#3.4) <a name='3.4'></a> Use computed property names when creating objects with dynamic property names.
+  - [3.3](#3.3) <a name='3.3'></a> Use computed property names when creating objects with dynamic property names.
 
   > Why? They allow you to define all the properties of an object in one place.
 
@@ -200,7 +170,7 @@ A big thanks to the following projects to get ideas for this styleguide!
     ```
 
   <a name="es6-object-shorthand"></a>
-  - [3.5](#3.5) <a name='3.5'></a> Use object method shorthand.
+  - [3.4](#3.4) <a name='3.4'></a> Use object method shorthand.
 
     ```javascript
     // bad
@@ -223,7 +193,7 @@ A big thanks to the following projects to get ideas for this styleguide!
     ```
 
   <a name="es6-object-concise"></a>
-  - [3.6](#3.6) <a name='3.6'></a> Use property value shorthand.
+  - [3.5](#3.5) <a name='3.5'></a> Use property value shorthand.
 
   > Why? It is shorter to write and descriptive.
 
@@ -241,7 +211,7 @@ A big thanks to the following projects to get ideas for this styleguide!
     };
     ```
 
-  - [3.7](#3.7) <a name='3.7'></a> Group your shorthand properties at the beginning of your object declaration.
+  - [3.6](#3.6) <a name='3.6'></a> Group your shorthand properties at the beginning of your object declaration.
 
   > Why? It's easier to tell which properties are using the shorthand.
 
