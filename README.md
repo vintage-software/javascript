@@ -696,15 +696,15 @@ A big thanks to the following projects:
 
     ```javascript
     // bad
-    const AirbnbStyleGuide = require('./AirbnbStyleGuide');
-    module.exports = AirbnbStyleGuide.es6;
+    const VSStyleGuide = require('./VSStyleGuide');
+    module.exports = VSStyleGuide.es6;
 
     // ok
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
-    export default AirbnbStyleGuide.es6;
+    import VSStyleGuide from './VSStyleGuide';
+    export default VSStyleGuide.es6;
 
     // best
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './VSStyleGuide';
     export default es6;
     ```
 
@@ -714,10 +714,10 @@ A big thanks to the following projects:
 
     ```javascript
     // bad
-    import * as AirbnbStyleGuide from './AirbnbStyleGuide';
+    import * as VSStyleGuide from './VSStyleGuide';
 
     // good
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
+    import VSStyleGuide from './VSStyleGuide';
     ```
 
   - [10.3](#10.3) <a name='10.3'></a>And do not export directly from an import.
@@ -727,11 +727,11 @@ A big thanks to the following projects:
     ```javascript
     // bad
     // filename es6.js
-    export { es6 as default } from './airbnbStyleGuide';
+    export { es6 as default } from './VSStyleGuide';
 
     // good
     // filename es6.js
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './VSStyleGuide';
     export default es6;
     ```
 
