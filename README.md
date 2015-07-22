@@ -1453,6 +1453,7 @@ A big thanks to the following projects:
       const name = 'Skywalker';
       return name;
     })();
+    ```
 
 **[⬆ back to top](#table-of-contents)**
 
