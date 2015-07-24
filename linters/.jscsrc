@@ -1,4 +1,4 @@
-// Google Preset Modified by Cory Bateman
+// Vintage Software
 {
     "esnext":  true,
     "requireCurlyBraces": [
@@ -13,11 +13,11 @@
     "requireOperatorBeforeLineBreak": true,
     "requireCamelCaseOrUpperCaseIdentifiers": true,
     "maximumLineLength": {
-        "value": 150, // Mod
+        "value": 190,
         "allowComments": true,
         "allowRegex": true
     },
-    "validateIndentation": 4, // Mod
+    "validateIndentation": 4,
     "validateQuoteMarks": "'",
 
     "disallowMultipleLineStrings": true,
@@ -80,10 +80,10 @@
     "requireSpacesInFunctionExpression": {
         "beforeOpeningCurlyBrace": true
     },
-    "requireSpacesInsideObjectBrackets": "all", // Mod
-    "requireParenthesesAroundIIFE": true, // Mod
-    "disallowKeywords": [ "with" ], // Mod
-    "disallowKeywordsOnNewLine": [ "else" ], // Mod
+    "requireSpacesInsideObjectBrackets": "all",
+    "requireParenthesesAroundIIFE": true,
+    "disallowKeywords": [ "with" ],
+    "disallowKeywordsOnNewLine": [ "else" ],
     "disallowSpacesInAnonymousFunctionExpression": {
         "beforeOpeningRoundBrace": true
     },
