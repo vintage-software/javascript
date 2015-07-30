@@ -5,7 +5,7 @@ as the [JavaScript Style Guide](https://github.com/vintage-software/javascript).
 
 Note TypeScript is compile time type checking. At runtime your ES6 Classes can be altered by their prototype and or object properties. 
 
-##Types
+## Class Primitive Properties
 
 Class level primitive properties should be typed.
 
@@ -21,6 +21,7 @@ export class AuthenticationService {
 }
 ```
 
+## Injected Services and Classes
 Injected services should be typed by their imported class.
 
 ``` typescript
@@ -42,8 +43,9 @@ export class AuthenticationService {
 }
 ```
 
+## Data Objects and DTOs
 Simple objects such as data transfer objects (DTOs) can by typed to the `any` option to allow 
-the most flexability when working with data. 
+the most flexibility when working with data. 
 
 ``` typescript
 export class TicketsService {
