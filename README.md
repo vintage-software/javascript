@@ -1829,9 +1829,9 @@ See our code style guide for TypeScript [here](https://github.com/vintage-softwa
 **Tools**
 
   - Code Style Linters
-    + [ESlint](http://eslint.org/) - [Airbnb Style .eslintrc](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc)
-    + [JSHint](http://www.jshint.com/) - [Airbnb Style .jshintrc](https://github.com/airbnb/javascript/blob/master/linters/jshintrc)
-    + [JSCS](https://github.com/jscs-dev/node-jscs) - [Airbnb Style Preset](https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json)
+    + [JSHint](http://jshint.com/) - [Vintage Software Style .jshintrc](https://github.com/vintage-software/javascript/blob/master/linters/.jshintrc)
+    + [JSCS](http://jscs.info/) - [Vintage Software Style Preset](https://github.com/vintage-software/javascript/blob/master/linters/.jscsrc)
+    + [TSLint](https://www.npmjs.com/package/tslint) - [Vintage Software Style Preset](https://github.com/vintage-software/javascript/blob/master/linters/tslint.json)
 
 **Other Style Guides**
 
