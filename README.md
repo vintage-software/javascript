@@ -1757,7 +1757,7 @@ A big thanks to the following projects:
 
 ## ECMAScript Compatibility
 Default we support ES5 browsers. We encourage projects to start addopting ES6 to allow
-projects to become future friendly. To start using these features use a transpiler such as [TypeScript](http://www.typescriptlang.org/) (Preferred) or [BabelJS](https://babeljs.io/).
+projects to become future friendly. To start using these features use a transpiler such as [BabelJS](https://babeljs.io/) or [TypeScript](http://www.typescriptlang.org/).
 See our code style guide for TypeScript [here](https://github.com/vintage-software/javascript/blob/master/typescript.md).
 
   - [26.1](#26.1) <a name='26.1'></a> Refer to the ES5 [compatibility table](http://kangax.github.io/compat-table/es5/).
