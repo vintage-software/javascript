@@ -66,7 +66,7 @@ ES6 Classes and ES7 Decorators can be used but advoid using TypeScript keywords 
 
 ## Interfaces
 
-Try to advoid using interfaces for now as we preffer staying to the ES spec as closly as possible. This may change in the near future depending on the ES spec process of new features. 
+Try to advoid using interfaces for now as we preffer staying to the ES spec as closely as possible. This may change in the near future depending on the ES spec process of new features. 
 
 ## TypeScript Definition Files
 
