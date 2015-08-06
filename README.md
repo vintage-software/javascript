@@ -1756,7 +1756,7 @@ A big thanks to the following projects:
   
 
 ## ECMAScript Compatibility
-Default we support ES5 browsers. We encourage projects to start addopting ES6 to allow
+Default we support ES5 browsers. We encourage projects to start adopting ES6 to allow
 projects to become future friendly. To start using these features use a transpiler such as [BabelJS](https://babeljs.io/) or [TypeScript](http://www.typescriptlang.org/).
 See our code style guide for TypeScript [here](https://github.com/vintage-software/javascript/blob/master/typescript.md).
 
@@ -1818,12 +1818,12 @@ See our code style guide for TypeScript [here](https://github.com/vintage-softwa
 **Learning ES6**
 
   - [Draft ECMA 2015 (ES6) Spec](https://people.mozilla.org/~jorendorff/es6-draft.html)
-  - [ExploringJS](http://exploringjs.com/)
   - [ES6 Compatibility Table](https://kangax.github.io/compat-table/es6/)
   - [Comprehensive Overview of ES6 Features](http://es6-features.org/)
 
 **Read This**
-
+  - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) - Kyle Simpson
+  - - [JavaScript: The Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742) - Douglas Crockford
   - [Annotated ECMAScript 5.1](http://es5.github.com/)
 
 **Tools**
@@ -1856,6 +1856,7 @@ See our code style guide for TypeScript [here](https://github.com/vintage-softwa
 
 **Books**
 
+  - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) - Kyle Simpson
   - [JavaScript: The Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742) - Douglas Crockford
   - [JavaScript Patterns](http://www.amazon.com/JavaScript-Patterns-Stoyan-Stefanov/dp/0596806752) - Stoyan Stefanov
   - [Pro JavaScript Design Patterns](http://www.amazon.com/JavaScript-Design-Patterns-Recipes-Problem-Solution/dp/159059908X)  - Ross Harmes and Dustin Diaz
@@ -1889,7 +1890,7 @@ See our code style guide for TypeScript [here](https://github.com/vintage-softwa
 **Podcasts**
 
   - [JavaScript Jabber](http://devchat.tv/js-jabber/)
-
+  - [Adventures in Angular](http://devchat.tv/adventures-in-angular)
 
 **[⬆ back to top](#table-of-contents)**
 
