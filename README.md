@@ -1823,7 +1823,7 @@ See our code style guide for TypeScript [here](https://github.com/vintage-softwa
 
 **Read This**
   - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) - Kyle Simpson
-  - - [JavaScript: The Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742) - Douglas Crockford
+  - [JavaScript: The Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742) - Douglas Crockford
   - [Annotated ECMAScript 5.1](http://es5.github.com/)
 
 **Tools**
