@@ -8,3 +8,5 @@ The following is some best practices and standards in organizing and building yo
 - file structure
 
 - help/api
+
+- build hooks for intergration servers
