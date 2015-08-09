@@ -1562,7 +1562,7 @@ A big thanks to the following projects:
       this.name = options.name;
     }
 
-    const bad = new user({
+    let bad = new user({
       name: 'nope',
     });
 
@@ -1573,7 +1573,7 @@ A big thanks to the following projects:
       }
     }
 
-    const good = new User({
+    let good = new User({
       name: 'yup',
     });
     ```
@@ -1594,7 +1594,7 @@ A big thanks to the following projects:
     ```javascript
     // bad
     function foo() {
-      const self = this;
+      let self = this;
       return function() {
         console.log(self);
       };
@@ -1602,7 +1602,7 @@ A big thanks to the following projects:
 
     // bad
     function foo() {
-      const that = this;
+      let that = this;
       return function() {
         console.log(that);
       };
@@ -1647,7 +1647,7 @@ A big thanks to the following projects:
   - [22.8](#22.8) <a name='22.8'></a> Use PascalCase when you export a singleton / function library / bare object.
 
     ```javascript
-    const AirbnbStyleGuide = {
+    let AirbnbStyleGuide = {
       es6: {
       }
     };
