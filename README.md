@@ -236,6 +236,18 @@ A big thanks to the following projects:
       mayTheFourth: 4,
     };
     ```
+    
+  - [3.7](#3.7) <a name='3.7'></a> If your object needs to explicitly show that it is not initialized with data then use  `null` and not `undefined`
+    
+    ```javascript
+    // bad
+    let obj = undefined;
+    
+    // ok
+    let obj = null;
+    ```
+    
+  > Why? "When defining a variable that is meant to later hold an object, it is advisable to initialize the variable to null as opposed to anything else. That way, you can explicitly check for the value null to determine if the variable has been filled with an object reference at a later time" - Nicholas Zakas, p. 30 of Javascript for Web Developers
 
 **[⬆ back to top](#table-of-contents)**
 
