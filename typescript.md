@@ -1,9 +1,9 @@
 #TypeScript Style Guide
 
-TypeScript is a statically typed super set of JavaScript (ES6/ES7). TypeScript follows all the same standards 
-as the [JavaScript Style Guide](https://github.com/vintage-software/javascript). Currently we keep types to a minimum and stay close to the standard ES spec using TypeScript as our preferred transpiler.
+TypeScript is a statically typed super set of JavaScript (ES6/ES7). TypeScript follows all the **same** standards 
+as the [JavaScript Style Guide](https://github.com/vintage-software/javascript). Types are optional and use developer disgression of when its apropriate or usefull to use static typing. 
 
-Note TypeScript is compile time type checking. At runtime your ES6 Classes can be altered by their prototype and or object properties. 
+Note TypeScript is compile time type checking. Advoid altering you Classes or Prototypes at runtime. 
 
 ## Class Primitive Properties
 
@@ -43,9 +43,12 @@ export class AuthenticationService {
 }
 ```
 
+## Function level types
+Function parameter types are optional. Use at your disgression. 
+
 ## Data Objects and DTOs
 Simple objects such as data transfer objects (DTOs) can by typed to the `any` option to allow 
-the most flexibility when working with data. 
+the most flexibility when working with data. Optinally you can define a Interface if needed.
 
 ``` typescript
 export class TicketsService {
@@ -62,11 +65,10 @@ export class TicketsService {
 
 ## Classes
 
-ES6 Classes and ES7 Decorators can be used but advoid using TypeScript keywords such as `private` and `public`. This may change in the future but currently we would like to stay close to the ES spec as possible. 
+ES6 Classes and ES7 Decorators can be used but advoid using TypeScript keywords such as `private` and `public`. This may change in the future but currently we would like to stay close to the ES spec as possible. Privat properties and Prototype functions should be prefixed with `_`. Example: `_myPrivateProperty`
 
 ## Interfaces
-
-Try to advoid using interfaces for now as we preffer staying to the ES spec as closely as possible. This may change in the near future depending on the ES spec process of new features. 
+Use Interfaces where appropriate. Try to keep the code close to the ES spec as possible only using Interfaces when there is a advantage of doing so. Do **not** use "I" as a prefix for interface names.
 
 ## TypeScript Definition Files
 
