@@ -1540,7 +1540,7 @@ A big thanks to the following projects:
     }
     ```
 
-  - [22.2](#22.2) <a name='22.2'></a> Use camelCase when naming objects, functions, and instances. Upper case and underscores for `const`.
+  - [22.2](#22.2) <a name='22.2'></a> Use camelCase when naming objects, functions, and instances. Upper case and underscores for constants.
 
     ```javascript
     // bad
