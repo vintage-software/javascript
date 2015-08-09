@@ -857,18 +857,18 @@ A big thanks to the following projects:
     // bad
     let i, len, dragonball,
         items = getItems(),
-        goSportsTeam = true;
+        GO_SPORTS_TEAM = true;
 
     // bad
     let i;
-    const items = getItems();
+    const ITEMS = getItems();
     let dragonball;
-    const goSportsTeam = true;
+    const GO_SPORTS_TEAM = true;
     let len;
 
     // good
-    const goSportsTeam = true;
-    const items = getItems();
+    const GO_SPORTS_TEAM = true;
+    const ITEMS = getItems();
     let dragonball;
     let i;
     let length;
@@ -886,7 +886,7 @@ A big thanks to the following projects:
 
       //..other stuff..
 
-      const name = getName();
+      let name = getName();
 
       if (name === 'test') {
         return false;
@@ -897,7 +897,7 @@ A big thanks to the following projects:
 
     // bad - unnecessary function call
     function(hasName) {
-      const name = getName();
+      let name = getName();
 
       if (!hasName) {
         return false;
@@ -914,7 +914,7 @@ A big thanks to the following projects:
         return false;
       }
 
-      const name = getName();
+      let name = getName();
       this.setFirstName(name);
 
       return true;
@@ -1540,16 +1540,17 @@ A big thanks to the following projects:
     }
     ```
 
-  - [22.2](#22.2) <a name='22.2'></a> Use camelCase when naming objects, functions, and instances.
+  - [22.2](#22.2) <a name='22.2'></a> Use camelCase when naming objects, functions, and instances. Upper case and underscores for `const`.
 
     ```javascript
     // bad
-    const OBJEcttsssss = {};
+    let OBJEcttsssss = {};
     const this_is_my_object = {};
     function c() {}
 
     // good
-    const thisIsMyObject = {};
+    let thisIsMyObject = {};
+    const THIS_IS_MY_OBJECT = {};
     function thisIsMyFunction() {}
     ```
 
