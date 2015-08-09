@@ -1,11 +1,15 @@
-#TypeScript Style Guide
+#TypeScript Style Guide (In Preview)
 
 TypeScript is a statically typed super set of JavaScript (ES6/ES7). TypeScript follows all the **same** standards 
 as the [JavaScript Style Guide](https://github.com/vintage-software/javascript). Types are optional and use developer disgression of when its apropriate or usefull to use static typing. 
 
-Note TypeScript is compile time type checking. Advoid altering you Classes or Prototypes at runtime. 
+**Note** TypeScript is compile time type checking. Advoid altering you Classes or Prototypes at runtime. 
 
-## Class Primitive Properties
+## Classes
+
+ES6 Classes and ES7 Decorators can be used but advoid using TypeScript keywords such as `private` and `public`. This may change in the future but currently we would like to stay close to the ES spec as possible. Private properties and Prototype functions should be prefixed with `_`. Example: `_myPrivateProperty`
+
+### Class Primitive Properties
 
 Class level primitive properties should be typed.
 
@@ -21,7 +25,7 @@ export class AuthenticationService {
 }
 ```
 
-## Injected Services and Classes
+### Injected Services and Classes
 Injected services should be typed by their imported class.
 
 ``` typescript
@@ -46,8 +50,8 @@ export class AuthenticationService {
 ## Function level types
 Function parameter types are optional. Use at your disgression. 
 
-## Data Objects and DTOs
-Simple objects such as data transfer objects (DTOs) can by typed to the `any` option to allow 
+## Data Objects/Structures and DTOs
+Data Objects/Structures such as data transfer objects (DTOs) can by typed to the `any` option to allow 
 the most flexibility when working with data. Optinally you can define a Interface if needed.
 
 ``` typescript
@@ -62,10 +66,6 @@ export class TicketsService {
     }
 }
 ```
-
-## Classes
-
-ES6 Classes and ES7 Decorators can be used but advoid using TypeScript keywords such as `private` and `public`. This may change in the future but currently we would like to stay close to the ES spec as possible. Private properties and Prototype functions should be prefixed with `_`. Example: `_myPrivateProperty`
 
 ## Interfaces
 Use Interfaces where appropriate. Try to keep the code close to the ES spec as possible only using Interfaces when there is a advantage of doing so. Do **not** use "I" as a prefix for interface names.
