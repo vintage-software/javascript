@@ -1158,17 +1158,17 @@ A big thanks to the following projects:
 
     ```javascript
     // bad
-    const active = true;  // is current tab
+    let active = true;  // is current tab
 
     // good
     // is current tab
-    const active = true;
+    let active = true;
 
     // bad
     function getType() {
       console.log('fetching type...');
       // set the default type to 'no type'
-      const type = this._type || 'no type';
+      let type = this._type || 'no type';
 
       return type;
     }
@@ -1178,7 +1178,7 @@ A big thanks to the following projects:
       console.log('fetching type...');
 
       // set the default type to 'no type'
-      const type = this._type || 'no type';
+      let type = this._type || 'no type';
 
       return type;
     }
@@ -1399,51 +1399,28 @@ A big thanks to the following projects:
       firstName: 'Ada',
       lastName: 'Lovelace',
       birthYear: 1815,
-      superPower: 'computers',
+      superPower: 'computers'
     };
     ```
 
-  - [19.2](#19.2) <a name='19.2'></a> Additional trailing comma: **Yup.**
+  - [19.2](#19.2) <a name='19.2'></a> No Additional trailing comma
 
-  > Why? This leads to cleaner git/mercurial diffs. Also, transpilers like Babel/TypeScript will remove the additional trailing comma in the transpiled code which means you don't have to worry about the [trailing comma problem](es5/README.md#commas) in legacy browsers.
+  > Why? [trailing comma problem](es5/README.md#commas) in legacy browsers. Transpilers will remove it but follow convention and remove trailing commas.
 
     ```javascript
-    // bad - git diff without trailing comma
-    const hero = {
-         firstName: 'Florence',
-    -    lastName: 'Nightingale'
-    +    lastName: 'Nightingale',
-    +    inventorOf: ['coxcomb graph', 'modern nursing']
-    }
-
-    // good - git diff with trailing comma
-    const hero = {
+    // bad
+    let hero = {
          firstName: 'Florence',
          lastName: 'Nightingale',
-    +    inventorOf: ['coxcomb chart', 'modern nursing'],
+         inventorOf: ['coxcomb chart', 'modern nursing'],
     }
 
-    // bad
-    const hero = {
-      firstName: 'Dana',
-      lastName: 'Scully'
-    };
-
-    const heroes = [
-      'Batman',
-      'Superman'
-    ];
-
     // good
-    const hero = {
-      firstName: 'Dana',
-      lastName: 'Scully',
-    };
-
-    const heroes = [
-      'Batman',
-      'Superman',
-    ];
+    let hero = {
+         firstName: 'Florence',
+         lastName: 'Nightingale',
+         inventorOf: ['coxcomb chart', 'modern nursing']
+    }
     ```
 
 **[⬆ back to top](#table-of-contents)**
