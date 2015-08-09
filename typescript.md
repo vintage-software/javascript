@@ -65,7 +65,7 @@ export class TicketsService {
 
 ## Classes
 
-ES6 Classes and ES7 Decorators can be used but advoid using TypeScript keywords such as `private` and `public`. This may change in the future but currently we would like to stay close to the ES spec as possible. Privat properties and Prototype functions should be prefixed with `_`. Example: `_myPrivateProperty`
+ES6 Classes and ES7 Decorators can be used but advoid using TypeScript keywords such as `private` and `public`. This may change in the future but currently we would like to stay close to the ES spec as possible. Private properties and Prototype functions should be prefixed with `_`. Example: `_myPrivateProperty`
 
 ## Interfaces
 Use Interfaces where appropriate. Try to keep the code close to the ES spec as possible only using Interfaces when there is a advantage of doing so. Do **not** use "I" as a prefix for interface names.
