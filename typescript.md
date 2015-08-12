@@ -5,6 +5,12 @@ as the [JavaScript Style Guide](https://github.com/vintage-software/javascript).
 
 **Note** TypeScript is compile time type checking. Advoid altering you Classes or Prototypes at runtime. 
 
+1. [Classes](#classes)
+2. [Functions](#functions)
+3. [Interfaces](interfaces)
+4. [TypeScript Definition Files](typescript-definition-files)
+5. [Non Standard ECMAScript Features](non-standard-ecmascript-features)
+
 ## Classes
 
 ES6 Classes and ES7 Decorators can be used but advoid using TypeScript keywords such as `private` and `public`. This may change in the future but currently we would like to stay close to the ES spec as possible. Private properties and Prototype functions should be prefixed with `_`. Example: `_myPrivateProperty`
@@ -47,14 +53,20 @@ export class AuthenticationService {
 }
 ```
 
-## Function level types
-Function parameter types are optional. Use at your disgression. 
+## Functions
+Function parameter types are optional. Use at your discretion. 
+
+```typescript
+updateItem(id : number, item : any) {
+    // ...
+}
+```
 
 ## Data Objects/Structures and DTOs
 Data Objects/Structures such as data transfer objects (DTOs) can by typed to the `any` option to allow 
-the most flexibility when working with data. Optinally you can define a Interface if needed.
+the most flexibility when working with data. Optinally you can define a Interface if the object is either large or widely used in the application.
 
-``` typescript
+```typescript
 export class TicketsService {
     data: any;
 
@@ -73,3 +85,33 @@ Use Interfaces where appropriate. Try to keep the code close to the ES spec as p
 ## TypeScript Definition Files
 
 Include TypeScript Definition Files to allow standard JavaScript libraries to be statically typed and allow improved intellisense with the IDE. See [http://definitelytyped.org/](http://definitelytyped.org/) and [http://definitelytyped.org/tsd/](http://definitelytyped.org/tsd/) for more information on how to get started.
+
+
+## Non Standard ECMAScript Features
+This is a list of some of the major TypeScript Features that we use that are non standard to the ECMAScript/JavaScript specification. This is to help a migration away from TypeScript if needed.
+
+- Optional Static Typing. Example: 
+    ```typescript
+        function add(num1 : number, num2 : number) { // ... }
+    ```
+ 
+- Parameter Decorators (ES7 decorators will supported in the spec but not Parameter Decorators). This is used in Angular 2. Example:
+    ```typescript
+    constructor(
+        @Inject(ApiService) ApiService,
+        @Inject(ErrorsService) ErrorsService) {
+
+        this._apiService = ApiService;
+        this._errorsService = ErrorsService;
+    }
+    ```
+    
+- Interfaces.
+    ```typescript
+    export interface Team {
+        id: number;
+        companyId: number;
+        name: string;
+        users: Array<User>;
+    }
+    ```
