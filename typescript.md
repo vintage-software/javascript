@@ -36,10 +36,10 @@ Injected services should be typed by their imported class.
 
 ``` typescript
 import {Inject} from 'angular2/di';
-import {ApiService} from 'app/services/common/api.service';
-import {ErrorsService} from 'app/services/common/errors.service';
+import {ApiService} from 'app/services/api.service';
+import {ErrorsService} from 'app/services/errors.service';
 
-export class AuthenticationService {
+export class DataService {
     _apiService: ApiService;
     _errorsService: ErrorsService;
 
