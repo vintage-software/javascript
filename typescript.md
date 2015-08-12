@@ -110,7 +110,6 @@ This is a list of some of the major TypeScript Features that we use that are non
     ```typescript
     export interface Team {
         id: number;
-        companyId: number;
         name: string;
         users: Array<User>;
     }
