@@ -7,9 +7,9 @@ as the [JavaScript Style Guide](https://github.com/vintage-software/javascript).
 
 1. [Classes](#classes)
 2. [Functions](#functions)
-3. [Interfaces](interfaces)
-4. [TypeScript Definition Files](typescript-definition-files)
-5. [Non Standard ECMAScript Features](non-standard-ecmascript-features)
+3. [Interfaces](#interfaces)
+4. [TypeScript Definition Files](#typescript-definition-files)
+5. [Non Standard ECMAScript Features](#non-standard-ecmascript-features)
 
 ## Classes
 
