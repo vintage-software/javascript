@@ -263,7 +263,7 @@ A big thanks to the following projects:
     let items = [];
     ```
 
-  - [4.2](#4.2) <a name='4.2'></a> Use Array#push instead of direct assignment to add items to an array.
+  - [4.2](#4.2) <a name='4.2'></a> Use Array.push instead of direct assignment to add items to an array.
 
     ```javascript
     let someStack = [];
@@ -292,7 +292,7 @@ A big thanks to the following projects:
     // good
     let itemsCopy = [...items];
     ```
-  - [4.4](#4.4) <a name='4.4'></a> To convert an array-like object to an array, use Array#from.
+  - [4.4](#4.4) <a name='4.4'></a> To convert an array-like object to an array, use Array.from.
 
     ```javascript
     let foo = document.querySelectorAll('.foo');
