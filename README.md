@@ -1,14 +1,14 @@
 # Vintage Software JavaScript Style Guide
 
-A big thanks to the following projects:
-- [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-- [Github Style Guide](https://github.com/styleguide/javascript)
-- [idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
-
 Code in any code-base should look like a single person typed it, no matter how many people contributed.
 
 > “Programs are meant to be read by humans and only incidentally for computers to execute.”
 > — H. Abelson and G. Sussman (in “Structure and Interpretation of Computer Programs”)
+
+A big thanks to the following projects:
+- [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+- [Github Style Guide](https://github.com/styleguide/javascript)
+- [idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
 
 ## Table of Contents
 
