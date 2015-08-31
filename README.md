@@ -10,6 +10,8 @@ A big thanks to the following projects:
 - [Github Style Guide](https://github.com/styleguide/javascript)
 - [idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
 
+Download the style/lint config files [here](https://github.com/vintage-software/javascript/tree/master/linters).
+
 ## Table of Contents
 
   1. [Types](#types)
