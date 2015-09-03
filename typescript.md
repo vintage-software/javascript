@@ -31,24 +31,29 @@ export class AuthenticationService {
 }
 ```
 
-### Injected Services and Classes
-Injected services should be typed by their imported class.
+### Dependency Injected Services (Singletons) in Angular 2
+Injected services should be typed by their imported class. Make sure to have the 
+emitDecoratorMetadata flag turned on for Angular 2 DI to know the type of the injectable service.
 
 ``` typescript
-import {Inject} from 'angular2/di';
+// Service
+import {Injectable} from 'angular2/di';
+
+@Injectable()
+export Class ApiService {
+    constructor () {
+    }
+}
+
+// Component
 import {ApiService} from 'app/services/api.service';
 import {ErrorsService} from 'app/services/errors.service';
 
-export class DataService {
-    _apiService: ApiService;
-    _errorsService: ErrorsService;
-
+export class UIComponent {
     constructor(
-        @Inject(ApiService) ApiService,
-        @Inject(ErrorsService) ErrorsService) {
+        private _apiService: ApiService,
+        private _errorsService: ErrorsService) {
 
-        this._apiService = ApiService;
-        this._errorsService = ErrorsService;
     }
 }
 ```
