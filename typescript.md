@@ -100,8 +100,9 @@ This is a list of some of the major TypeScript Features that we use that are non
         function add(num1 : number, num2 : number) { // ... }
     ```
  
-- Parameter Decorators (ES7 decorators will supported in the spec but not Parameter Decorators). This is used in Angular 2. Example:
+- Parameter Decorators (ES7 decorators will supported in the spec but not Parameter Decorators). This is used in Angular 2. Use the auto assigned properties like the example above. Example:
     ```typescript
+    // Bad favor the injected service example above.
     constructor(
         @Inject(ApiService) ApiService,
         @Inject(ErrorsService) ErrorsService) {
