@@ -10,6 +10,7 @@ as the [JavaScript Style Guide](https://github.com/vintage-software/javascript).
 3. [Interfaces](#interfaces)
 4. [TypeScript Definition Files](#typescript-definition-files)
 5. [Non Standard ECMAScript Features](#non-standard-ecmascript-features)
+6. [Installation](#installation)
 
 ## Classes
 
@@ -120,3 +121,6 @@ This is a list of some of the major TypeScript Features that we use that are non
         users: Array<User>;
     }
     ```
+
+## Installation
+To install Typescript we recomend installing the latest version from [npm](https://www.npmjs.com/package/typescript).
