@@ -123,4 +123,4 @@ This is a list of some of the major TypeScript Features that we use that are non
     ```
 
 ## Installation
-To install Typescript we recomend installing the latest version from [npm](https://www.npmjs.com/package/typescript).
+To install TypeScript we recomend installing the latest version from [npm](https://www.npmjs.com/package/typescript).
