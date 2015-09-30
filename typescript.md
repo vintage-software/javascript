@@ -14,7 +14,7 @@ as the [JavaScript Style Guide](https://github.com/vintage-software/javascript).
 
 ## Classes
 
-ES6 Classes and ES7 Decorators can be used but advoid using TypeScript keywords such as `private` and `public`. This may change in the future but currently we would like to stay close to the ES spec as possible. Private properties and Prototype functions should be prefixed with `_`. Example: `_myPrivateProperty`
+ES6 Classes and ES7 Decorators can be used. Private properties and Prototype functions should be prefixed with `_`. Example: `_myPrivateProperty`
 
 ### Class Primitive Properties
 
@@ -22,8 +22,8 @@ Class level primitive properties should be typed.
 
 ``` typescript
 export class AuthenticationService {
-    _isAuthenticated: boolean;
-    _tokenKey: string;
+    private _isAuthenticated: boolean;
+    private _tokenKey: string;
 
     constructor() {
       this._isAuthenticated = false;
@@ -38,7 +38,7 @@ emitDecoratorMetadata flag turned on for Angular 2 DI to know the type of the in
 
 ``` typescript
 // Service
-import {Injectable} from 'angular2/di';
+import {Injectable} from 'angular2/angular2';
 
 @Injectable()
 export Class ApiService {
@@ -86,7 +86,7 @@ export class TicketsService {
 ```
 
 ## Interfaces
-Use Interfaces where appropriate. Try to keep the code close to the ES spec as possible only using Interfaces when there is a advantage of doing so. Do **not** use "I" as a prefix for interface names.
+Use Interfaces where appropriate. Only use Interfaces when there is a advantage of doing so. Do **not** use "I" as a prefix for interface names.
 
 ## TypeScript Definition Files
 
