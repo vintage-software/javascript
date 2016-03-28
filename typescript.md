@@ -60,8 +60,7 @@ export class UIComponent {
 ```
 
 ## Functions
-Function parameter types are optional. Use at your discretion. 
-
+Set parameter types on functions and methods 
 ```typescript
 updateItem(id : number, item : any) {
     // ...
