@@ -85,7 +85,7 @@ export class TicketsService {
 ```
 
 ## Interfaces
-Use Interfaces where appropriate. Only use Interfaces when there is a advantage of doing so. Do **not** use "I" as a prefix for interface names.
+Use Interfaces where appropriate. Only use Interfaces when there is a advantage of doing so. Do **not** use "I" as a prefix for interface names. [TypeScript convention does not prefix with "I"](https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Interfaces.md).
 
 ## TypeScript Definition Files
 
