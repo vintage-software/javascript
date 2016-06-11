@@ -1,3 +1,4 @@
 #Angular 2 Style Guide
 
-Angular 2 is still in alpha and this is a work in progress.
+At Vintage Software we follow the official [Angular Style Guide](https://angular.io/styleguide) 
+and use the [Angular CLI](https://cli.angular.io).
